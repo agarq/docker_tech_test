@@ -36,7 +36,7 @@ In this repository you will find the deliverables required for this technical te
    ![My Image](images/05.png)
 
 6. Check the container Ip address to test the hello world page: 
-   `docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}} <container id>`
+   `docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' <container id>`
 
    ![My Image](images/06.png)
     
