@@ -32,7 +32,7 @@ In this repository you will find the deliverables required for this technical te
 
 6. Check the container Ip address to test the hello world page: 
    docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' <containerId>
-![My Image](images/06.png)
+   ![My Image](images/06.png)
     
 7. Test the hello world page: curl http://<ip from step 3.> .  You will see the hello world page code.
 ![My Image](images/07.png)
