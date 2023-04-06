@@ -14,7 +14,8 @@ In this repository you will find the deliverables required for this technical te
 - Dockerfile.
 - Url to download the image from Docker Hub.
 
-<b>INSTRUCTIONS TO TEST THE DOCKERFILE</b>
+
+# INSTRUCTIONS TO TEST THE DOCKERFILE
 
 1. Open a terminal in a Linux machine where you have docker installed.
 
