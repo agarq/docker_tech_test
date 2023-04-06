@@ -1,4 +1,4 @@
-# docker_tech_test
+# Docker tech test
 Build a Docker image that pulls up a Virtual machine on Linux with the following specifications:
 - Install Git
 - Install Vs Code
@@ -20,28 +20,28 @@ In this repository you will find the deliverables required for this technical te
 
 2. Download the image from Docker Hub in a linux machine with this command: `docker pull jhonf1984/techtestimage:latest`
 
-![My Image](images/02.png)
+   ![My Image](images/02.png)
 
 3. Run `docker images` to check if the image is available. 
 
-![My Image](images/03.png)
+   ![My Image](images/03.png)
 
 4. Run the image: `docker run -d --name testcontainer jhonf1984/techtestimage`
 
-![My Image](images/04.png)
+   ![My Image](images/04.png)
 
 5. Check if the container is running. Execute `docker ps` and look for the testcontainer id.
 
-![My Image](images/05.png)
+   ![My Image](images/05.png)
 
 6. Check the container Ip address to test the hello world page: 
    `docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}} <container id>`
 
-![My Image](images/06.png)
+   ![My Image](images/06.png)
     
 7. Test the hello world page.  Run `curl http://<ip from step 6.>` .  You will see the hello world page code.
 
-![My Image](images/07.png)
+   ![My Image](images/07.png)
     
 8. Get into the container to verify all required software is installed.  Run `docker exec -it <containerId> bash`
 
