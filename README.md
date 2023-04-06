@@ -17,7 +17,7 @@ In this repository you will find the deliverables required for this technical te
 
 # INSTRUCTIONS TO TEST THE DOCKERFILE
 
-1. Open a terminal in a Linux machine where you have docker installed.
+1. Open a terminal in a Linux machine where you have docker installed (for this test, Docker version used is: 20.10.12).
 
 2. Download the image from Docker Hub in a linux machine with this command: `docker pull jhonf1984/techtestimage:latest`
 
