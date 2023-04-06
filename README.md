@@ -1,4 +1,4 @@
-# Docker tech test
+# DOCKER TECH TEST
 Build a Docker image that pulls up a Virtual machine on Linux with the following specifications:
 - Install Git
 - Install Vs Code
