@@ -14,7 +14,7 @@ In this repository you will find the deliverables required for this technical te
 - Dockerfile.
 - Url to download the image from Docker Hub.
 
-<b>INSTRUCTIONS TEST THE DOCKERFILE</b>
+<b>INSTRUCTIONS TO TEST THE DOCKERFILE</b>
 
 1. Open a terminal in a Linux machine where you have docker installed.
 
@@ -31,7 +31,7 @@ In this repository you will find the deliverables required for this technical te
 ![My Image](images/05.png)
 
 6. Check the container Ip address to test the hello world page: 
-   docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' <containerId>
+   docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' <containerId> DF
    ![My Image](images/06.png)
     
 7. Test the hello world page: curl http://<ip from step 3.> .  You will see the hello world page code.
