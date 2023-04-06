@@ -18,7 +18,7 @@ In this repository you will find the deliverables required for this technical te
 
 1. Open a terminal in a Linux machine where you have docker installed.
 
-2. Download the image from Docker Hub in a linux machine with this command: docker pull jhonf1984/techtestimage:latest
+2. Download the image from Docker Hub in a linux machine with this command: `docker pull jhonf1984/techtestimage:latest`
 
 ![My Image](images/02.png)
 
