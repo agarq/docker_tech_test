@@ -14,7 +14,7 @@ In this repository you will find the deliverables required for this technical te
 - Dockerfile.
 - Url to download the image from Docker Hub.
 
-INSTRUCTIONS TEST THE DOCKERFILE
+<b>INSTRUCTIONS TEST THE DOCKERFILE</b>
 
 1. Open a terminal in a Linux machine where you have docker installed.
 
@@ -22,23 +22,30 @@ INSTRUCTIONS TEST THE DOCKERFILE
 ![My Image](images/02.png)
 
 3. Run docker images to check if the image is available. 
+![My Image](images/03.png)
 
 4. Run the image: docker run -d --name testcontainer jhonf1984/techtestimage
+![My Image](images/04.png)
 
 5. Check if the container is running. Execute docker ps and look for the testcontainer id.
+![My Image](images/05.png)
 
 6. Check the container Ip address to test the hello world page: docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' <containerId>
-
+![My Image](images/06.png)
+    
 7. Test the hello world page: curl http://<ip from step 3.> .  You will see the hello world page code.
-
+![My Image](images/07.png)
+    
 8. Get into the container to verify all required software is installed: docker exec -it <containerId> bash
-
+![My Image](images/08.png)
+    
 9. To check the required software installation:
     - For Git, run: git --version
     - For Vs Code, run: code --version --no-sandbox --user-data-dir=/tmp/vscode-data
     - For Maven, run: mvn -version
     - For PostgreSQL, run: psql --version
     - For Java JRE, run: java -version
+![My Image](images/09.png)
 
 
 
